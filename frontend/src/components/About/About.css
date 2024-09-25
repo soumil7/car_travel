@@ -1,0 +1,85 @@
+.about {
+    background-color: #f4f4f4; /* Light gray background */
+    color: #333; /* Dark text color */
+    padding: 40px 20px; /* Top and bottom padding, horizontal padding */
+    text-align: center; /* Center-align the text */
+}
+
+.about h2 {
+    font-size: 2.5em; /* Font size for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+    color: black;
+}
+
+.about p {
+    font-size: 1.1em; /* Font size for the paragraph */
+    margin-bottom: 15px; /* Space below each paragraph */
+}
+
+/* Responsive design for different screen sizes */
+
+/* Mobile (320px) */
+@media (max-width: 320px) {
+    .about h2 {
+        font-size: 2em; /* Smaller heading for mobile */
+    }
+
+    .about p {
+        font-size: 0.9em; /* Smaller paragraph text for mobile */
+    }
+}
+
+/* Mobile (375px) */
+@media (max-width: 375px) {
+    .about h2 {
+        font-size: 2.2em; /* Slightly larger heading for mobile */
+    }
+
+    .about p {
+        font-size: 1em; /* Standard paragraph text for mobile */
+    }
+}
+
+/* Mobile (475px) */
+@media (max-width: 475px) {
+    .about h2 {
+        font-size: 2.4em; /* Heading adjustment for larger mobile */
+    }
+
+    .about p {
+        font-size: 1.1em; /* Standard paragraph text for larger mobile */
+    }
+}
+
+/* Tablet (768px) */
+@media (min-width: 476px) and (max-width: 768px) {
+    .about h2 {
+        font-size: 2.5em; /* Standard heading size for tablets */
+    }
+
+    .about p {
+        font-size: 1.2em; /* Standard paragraph text for tablets */
+    }
+}
+
+/* Laptop (1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .about h2 {
+        font-size: 2.7em; /* Larger heading for laptops */
+    }
+
+    .about p {
+        font-size: 1.3em; /* Larger paragraph text for laptops */
+    }
+}
+
+/* Laptop Larger (1140px) */
+@media (min-width: 1025px) and (max-width: 1140px) {
+    .about h2 {
+        font-size: 2.8em; /* Slightly larger heading for larger laptops */
+    }
+
+    .about p {
+        font-size: 1.4em; /* Larger paragraph text for larger laptops */
+    }
+}

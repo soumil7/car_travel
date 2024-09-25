@@ -1,0 +1,174 @@
+/* General Styling for all screen sizes */
+.destinations {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fdf4f1;
+}
+
+h2 {
+    color: tomato;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.destination-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.destination-card {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid tomato;
+}
+
+.destination-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.destination-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border: 2px solid tomato;
+}
+
+h3 {
+    color: tomato;
+    font-size: 1.8em;
+    margin: 10px 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    color: #555;
+    font-size: 1.2em;
+    margin: 5px 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Responsive design for different screen sizes */
+
+/* Mobile (320px - 375px) */
+@media (max-width: 375px) {
+    .destination-list {
+        grid-template-columns: 1fr; /* Single column for small screens */
+    }
+
+    .destinations {
+        padding: 40px 10px;
+    }
+
+    .destination-card {
+        padding: 15px;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
+
+/* Mobile (375px width and 645px height) */
+@media (max-width: 375px) and (max-height: 645px) {
+    .destination-list {
+        grid-template-columns: 1fr 1fr; /* Two columns for this specific screen size */
+    }
+
+    .destinations {
+        padding: 40px 10px;
+    }
+
+    .destination-card {
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .destination-image {
+        height: 150px; /* Adjust image height for small screens */
+    }
+
+    h3 {
+        font-size: 1.4em; /* Slightly smaller font for compact view */
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
+
+/* Mobile (475px) */
+@media (min-width: 376px) and (max-width: 475px) {
+    .destination-list {
+        grid-template-columns: 1fr 1fr; /* Two columns for larger mobile screens */
+    }
+
+    h3 {
+        font-size: 1.6em;
+    }
+
+    p {
+        font-size: 1.1em;
+    }
+}
+
+/* Tablet (768px) */
+@media (min-width: 476px) and (max-width: 768px) {
+    .destination-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .destinations {
+        padding: 50px 15px;
+    }
+
+    h3 {
+        font-size: 1.7em;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+}
+
+/* Laptop (1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .destination-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    h3 {
+        font-size: 1.8em;
+    }
+
+    p {
+        font-size: 1.25em;
+    }
+}
+
+/* Laptop Larger (1140px) */
+@media (min-width: 1025px) and (max-width: 1140px) {
+    .destination-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    h3 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1.3em;
+    }
+}

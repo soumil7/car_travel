@@ -1,0 +1,133 @@
+/* General Styling for all screen sizes */
+.booking-form {
+    padding: 20px;
+}
+
+.booking-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.booking-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.booking-form input {
+    margin: 10px 0;
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+}
+
+.booking-form button {
+    padding: 10px 20px;
+    background-color: tomato;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.booking-form button:hover {
+    background-color: rgb(165, 32, 8);
+}
+
+/* Responsive design for different screen sizes */
+
+/* Mobile (320px) */
+@media (max-width: 320px) {
+    .booking-form input {
+        width: 90%; /* Slightly larger input fields on small screens */
+        font-size: 14px;
+    }
+
+    .booking-form button {
+        width: 100%;
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .booking-form h2 {
+        font-size: 1.5em;
+    }
+}
+
+/* Mobile (375px) */
+@media (min-width: 321px) and (max-width: 375px) {
+    .booking-form input {
+        width: 90%; 
+        font-size: 15px;
+    }
+
+    .booking-form button {
+        width: 100%;
+        padding: 9px;
+        font-size: 15px;
+    }
+}
+
+/* Mobile (475px) */
+@media (min-width: 376px) and (max-width: 475px) {
+    .booking-form input {
+        width: 85%; 
+        font-size: 16px;
+    }
+
+    .booking-form button {
+        width: auto;
+        padding: 10px;
+        font-size: 16px;
+    }
+}
+
+/* Tablet (768px) */
+@media (min-width: 476px) and (max-width: 768px) {
+    .booking-form input {
+        width: 75%;
+        font-size: 17px;
+    }
+
+    .booking-form button {
+        width: auto;
+        padding: 12px;
+        font-size: 17px;
+    }
+
+    .booking-form h2 {
+        font-size: 2em;
+    }
+}
+
+/* Laptop (1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .booking-form input {
+        width: 70%;
+        font-size: 18px;
+    }
+
+    .booking-form button {
+        width: auto;
+        padding: 12px 25px;
+        font-size: 18px;
+    }
+}
+
+/* Laptop Larger (1140px) */
+@media (min-width: 1025px) and (max-width: 1140px) {
+    .booking-form input {
+        width: 65%;
+        font-size: 18px;
+    }
+
+    .booking-form button {
+        width: auto;
+        padding: 12px 30px;
+        font-size: 18px;
+    }
+
+    .booking-form h2 {
+        font-size: 2.2em;
+    }
+}
