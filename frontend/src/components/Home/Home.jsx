@@ -10,6 +10,7 @@ import Destinations from '../Destinations/Destinations';
 import BookingForm from '../BookingForm/BookingForm';
 import Contact from '../Contact/Contact';
 import Footer from '../Footer/Footer';
+import CarRental from '../CarRental/CarRental';
 
 const Home = () => {
   const destinations = [
@@ -68,6 +69,7 @@ const Home = () => {
         </div>
       </div>
       <Destinations></Destinations>
+      <CarRental></CarRental>
       <BookingForm></BookingForm>
       <Contact></Contact>
       <Footer></Footer>

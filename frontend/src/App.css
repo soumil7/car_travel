@@ -13,6 +13,16 @@
   }
 }
 
+.car-rental-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 20px;
+}
+
+
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

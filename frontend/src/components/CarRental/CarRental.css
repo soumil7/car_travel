@@ -1,0 +1,130 @@
+.car-rental-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.car-rental-card:hover {
+    transform: scale(1.05);
+}
+
+.car-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.car-details {
+    text-align: center;
+}
+
+.car-name {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.rent-rate, .quotation {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.rent-btn {
+    background-color: #ff5722;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+}
+
+.rent-btn:hover {
+    background-color: #e64a19;
+}
+
+/* Responsive Design */
+
+/* Mobile (320px) */
+@media (max-width: 320px) {
+    .car-rental-card {
+        padding: 15px;
+    }
+
+    .car-name {
+        font-size: 1.2em;
+    }
+
+    .rent-rate, .quotation {
+        font-size: 1em;
+    }
+}
+
+/* Mobile (375px) */
+@media (max-width: 375px) {
+    .car-name {
+        font-size: 1.3em;
+    }
+
+    .rent-rate, .quotation {
+        font-size: 1.1em;
+    }
+}
+
+/* Mobile (475px) */
+@media (max-width: 475px) {
+    .car-rental-card {
+        max-width: 100%;
+    }
+
+    .car-name {
+        font-size: 1.4em;
+    }
+
+    .rent-rate, .quotation {
+        font-size: 1.1em;
+    }
+}
+
+/* Tablet (768px) */
+@media (min-width: 476px) and (max-width: 768px) {
+    .car-name {
+        font-size: 1.5em;
+    }
+
+    .rent-rate, .quotation {
+        font-size: 1.2em;
+    }
+}
+
+/* Laptop (1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .car-name {
+        font-size: 1.7em;
+    }
+
+    .rent-rate, .quotation {
+        font-size: 1.3em;
+    }
+}
+
+/* Laptop Larger (1140px) */
+@media (min-width: 1025px) and (max-width: 1140px) {
+    .car-name {
+        font-size: 1.8em;
+    }
+
+    .rent-rate, .quotation {
+        font-size: 1.4em;
+    }
+}
